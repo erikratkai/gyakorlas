@@ -1,3 +1,5 @@
+// ๋࣭ ⭑๋࣭ 1. óra ๋࣭ ⭑๋࣭ 
+
 //letes cuccok
 
 // INT
@@ -75,7 +77,7 @@ console.log(tomb)
 
 const stringes_ize = "kjhklkh" //deklarálunk egy const valtozot.
 console.log(stringes_ize)
-stringes_ize = "skibidi"    //NEM LEHET VALTOZTATNI MERT CONST!!!!!!!!44!!
+//stringes_ize = "skibidi"    //NEM LEHET VALTOZTATNI MERT CONST!!!!!!!!44!!
 console.log(stringes_ize)
 
 const allatok = {allat: "kutya", ugat: true}    //letrehozok egy uj objektumot
@@ -88,3 +90,82 @@ console.log(allatok2)
 allatok2.push({allat: "elefánt", nyavog: "hell naah"}) // megpróbálhatsz hozzáadni egy másik objektumot (vagy egy elemet de igazából mindegy, mert amúgy az objektum az uj elem úgyhogy igazából tökmindegy), DE NEM ÉRTED HOGY NEM LEHET ๋࣭ ⭑๋࣭ ⭑BASSZUSKULCS๋๋࣭࣭ ⭑ ⭑ ???!?!!  Azért, mert ez egy const változó.
 console.log(allatok2)
 
+
+// ๋࣭ ⭑๋࣭ 2. óra ๋࣭ ⭑๋࣭ 
+
+//függvények
+
+function fuggveny(){
+    console.log("kiír valamit.")  //ez egy függvény ami kiír valamit.
+}
+
+fuggveny() // meghívjuk a függvényt.
+
+function fuggveny2(param1, param2){ //ez egy függvény aminek két bemeneti értéke van, param1, param2  
+    eredmeny = param1 + param2  // az eredmeny valtozo egyenlo lesz a ket paraméter összegével.
+    return eredmeny    // returnöljük az eredményt.
+}
+
+console.log(fuggveny2(1, 2)) //logoljuk
+
+//elágazások
+
+let kor = 19 
+if(kor < 18){   // ha a kor valtozo kisebb mint 18
+    console.log("fiatal vagy")  //akkor ez tortenik (kilogoljuk h "fiatal vagy.")
+}
+else{
+    console.log("nem vagy fiatal") //ha meg nem kisebb azaz else a cucc akkor meg ez tortenik (kilogoljuk h "nem vagy fiatal")
+}
+
+let pontszam = 45   
+if(pontszam < 41){  //ugyanaz csak pontszam valtozoval
+    console.log("karó") //yes
+}
+else if (pontszam < 55 & pontszam >= 41) {  //itt mar bejon az "else if" elagazas ami egy uj if-es feltetel cuccot hoz letre
+    console.log("kettes") //logoljuk
+} else { 
+    console.log("ötös c:")  //ELSE ez törtenik: ötös c:
+}
+
+// itt a logikai ertekekkel szorakoztunk egy kicsit !igaz, igaz, false !true meg ilyenek, vilagos!
+const igaz = false  
+if (!igaz){
+    console.log("igaz")
+}
+
+// itt a logikai ertekekkel szorakoztunk egy kicsit !igaz, igaz, false !true meg ilyenek, vilagos! (csak fügvénnyel!4!!)
+function logikaiErtek(){    
+    return true
+}
+
+if (!logikaiErtek()){       
+    console.log("igazzal tér vissza")
+}
+
+//CIKLUSOK
+
+//basic ๋࣭ ⭑๋࣭ ⭑for๋࣭ ⭑๋࣭ ⭑ ciklus
+for (let i = 0; i < 5; i++){  
+    console.log(i)
+}
+
+
+const szogletes = ["első sztring", "második", "3."]     // letrehoztunk egy szogletes tombot
+
+//basic ๋࣭ ⭑๋࣭ ⭑for in๋࣭ ⭑๋࣭ ⭑
+for (const i in szogletes){  //a for in kulcsok alapján iterál
+    console.log(i, szogletes[i])
+}
+
+//basic ๋࣭ ⭑๋࣭ ⭑for of๋࣭ ⭑๋࣭ ⭑
+for (const i of szogletes){ //a for of értékek alapján iterál
+    console.log(i)
+}
+
+//ez meg egy for ciklus ami addig fut ameddig el nem fogy a tomb, azaz a lista vegeig. JA.
+for (let i = 0; i < szogletes.length; i++){
+    console.log(i, szogletes[i])
+}
+
+//๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑๋࣭ ⭑VÉGE.
